@@ -6,8 +6,11 @@
 # Description
 
 This tool scans files in directories passed as input by the user recursively to look for patterns within them.
+
 shcanner uses by default **4 parallel instances of grep** to load and search the regexes, optimizing times, you can always change it by editing the script.
-For change the dataset just see the files in `./patterns`, I recommend using this repo to get datasets (like me) [https://github.com/mazen160/secrets-patterns-db](https://github.com/mazen160/secrets-patterns-db)
+
+For change the dataset just see the files in `./patterns`, I recommend using [**this repo**](https://github.com/mazen160/secrets-patterns-db) to get datasets (like me)
+
 I hope I have said everything, otherwise the code is not difficult to analyze :)
 
 ## Required
@@ -21,7 +24,9 @@ To install the latest version of yq run these commands
 ## Usage
 
 To run this tool, after installing yq and verifying that it works, assign execution permissions with `chmod +x ./shcanner.sh` and then run with `./shcanner.sh`
+
 The tool asks the user for the type of scan by default, based on the answer one dataset is used rather than another, I recommend using the quick scan for try the tool.
+
 Lastly, enter the folders to search for separated by space (e.g. `/home/user/test /etc`)
 
 ## Execution example
